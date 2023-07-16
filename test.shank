@@ -1,0 +1,31 @@
+define test (t : integer; s : real)
+variables a, b : integer
+    b := 5
+    a := b
+
+    write "function call test"
+
+define add (t : integer; s : real)
+constants pi=3.14159
+variables a, b : integer
+    a := 2
+    b := 3
+
+    write "test"
+    test 1, 2.0
+
+    repeat until a = 0
+        write "test repeat"
+        a := a - 1
+
+    if b > 3 then
+        write "hello"
+    else
+        write "world"
+
+    while b > 0
+        write "test while"
+        b := b - 1
+
+    for i from 1 to 5
+        write "test for"
